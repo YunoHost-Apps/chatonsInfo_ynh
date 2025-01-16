@@ -5,7 +5,9 @@ EZ editatu eskuz.
 
 # Chatons Infos YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/chatonsinfos.svg)](https://dash.yunohost.org/appci/app/chatonsinfos) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/chatonsinfos.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/chatonsinfos.maintain.svg)
+[![Integrazio maila](https://apps.yunohost.org/badge/integration/chatonsinfos)](https://ci-apps.yunohost.org/ci/apps/chatonsinfos/)
+![Funtzionamendu egoera](https://apps.yunohost.org/badge/state/chatonsinfos)
+![Mantentze egoera](https://apps.yunohost.org/badge/maintained/chatonsinfos)
 
 [![Instalatu Chatons Infos YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=chatonsinfos)
 
@@ -22,11 +24,6 @@ ChatonsInfos is a protocol for sharing data about the CHATONS collective, its me
 **Paketatutako bertsioa:** 2023.12.21~ynh1
 
 **Demoa:** <https://stats.chatons.org/index.xhtml>
-
-## Pantaila-argazkiak
-
-![Chatons Infos(r)en pantaila-argazkia](./doc/screenshots/example.jpg)
-
 ## Dokumentazioa eta baliabideak
 
 - Administratzaileen dokumentazio ofiziala: <https://framagit.org/chatons/chatonsinfos/-/blob/master/README.md>

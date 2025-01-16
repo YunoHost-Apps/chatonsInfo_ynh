@@ -5,7 +5,9 @@ Il NE doit PAS être modifié à la main.
 
 # Chatons Infos pour YunoHost
 
-[![Niveau d’intégration](https://dash.yunohost.org/integration/chatonsinfos.svg)](https://dash.yunohost.org/appci/app/chatonsinfos) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/chatonsinfos.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/chatonsinfos.maintain.svg)
+[![Niveau d’intégration](https://apps.yunohost.org/badge/integration/chatonsinfos)](https://ci-apps.yunohost.org/ci/apps/chatonsinfos/)
+![Statut du fonctionnement](https://apps.yunohost.org/badge/state/chatonsinfos)
+![Statut de maintenance](https://apps.yunohost.org/badge/maintained/chatonsinfos)
 
 [![Installer Chatons Infos avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=chatonsinfos)
 
@@ -22,11 +24,6 @@ ChatonsInfos est un protocole de partage de données sur le collectif CHATONS, s
 **Version incluse :** 2023.12.21~ynh1
 
 **Démo :** <https://stats.chatons.org/index.xhtml>
-
-## Captures d’écran
-
-![Capture d’écran de Chatons Infos](./doc/screenshots/example.jpg)
-
 ## Documentations et ressources
 
 - Documentation officielle de l’admin : <https://framagit.org/chatons/chatonsinfos/-/blob/master/README.md>

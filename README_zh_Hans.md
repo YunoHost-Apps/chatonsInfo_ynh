@@ -5,7 +5,9 @@
 
 # YunoHost 上的 Chatons Infos
 
-[![集成程度](https://dash.yunohost.org/integration/chatonsinfos.svg)](https://dash.yunohost.org/appci/app/chatonsinfos) ![工作状态](https://ci-apps.yunohost.org/ci/badges/chatonsinfos.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/chatonsinfos.maintain.svg)
+[![集成程度](https://apps.yunohost.org/badge/integration/chatonsinfos)](https://ci-apps.yunohost.org/ci/apps/chatonsinfos/)
+![工作状态](https://apps.yunohost.org/badge/state/chatonsinfos)
+![维护状态](https://apps.yunohost.org/badge/maintained/chatonsinfos)
 
 [![使用 YunoHost 安装 Chatons Infos](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=chatonsinfos)
 
@@ -22,11 +24,6 @@ ChatonsInfos is a protocol for sharing data about the CHATONS collective, its me
 **分发版本：** 2023.12.21~ynh1
 
 **演示：** <https://stats.chatons.org/index.xhtml>
-
-## 截图
-
-![Chatons Infos 的截图](./doc/screenshots/example.jpg)
-
 ## 文档与资源
 
 - 官方管理文档： <https://framagit.org/chatons/chatonsinfos/-/blob/master/README.md>
