@@ -5,7 +5,9 @@ No se debe editar a mano.
 
 # Chatons Infos para Yunohost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/chatonsinfos.svg)](https://dash.yunohost.org/appci/app/chatonsinfos) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/chatonsinfos.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/chatonsinfos.maintain.svg)
+[![Nivel de integración](https://apps.yunohost.org/badge/integration/chatonsinfos)](https://ci-apps.yunohost.org/ci/apps/chatonsinfos/)
+![Estado funcional](https://apps.yunohost.org/badge/state/chatonsinfos)
+![Estado En Mantención](https://apps.yunohost.org/badge/maintained/chatonsinfos)
 
 [![Instalar Chatons Infos con Yunhost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=chatonsinfos)
 
@@ -22,11 +24,6 @@ ChatonsInfos is a protocol for sharing data about the CHATONS collective, its me
 **Versión actual:** 2023.12.21~ynh1
 
 **Demo:** <https://stats.chatons.org/index.xhtml>
-
-## Capturas
-
-![Captura de Chatons Infos](./doc/screenshots/example.jpg)
-
 ## Documentaciones y recursos
 
 - Documentación administrador oficial: <https://framagit.org/chatons/chatonsinfos/-/blob/master/README.md>
@@ -36,7 +33,7 @@ ChatonsInfos is a protocol for sharing data about the CHATONS collective, its me
 
 ## Información para desarrolladores
 
-Por favor enviar sus correcciones a la [`branch testing`](https://github.com/YunoHost-Apps/chatonsinfos_ynh/tree/testing
+Por favor enviar sus correcciones a la [rama `testing`](https://github.com/YunoHost-Apps/chatonsinfos_ynh/tree/testing).
 
 Para probar la rama `testing`, sigue asÍ:
 

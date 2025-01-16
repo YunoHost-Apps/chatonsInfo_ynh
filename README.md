@@ -5,7 +5,9 @@ It shall NOT be edited by hand.
 
 # Chatons Infos for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/chatonsinfos.svg)](https://dash.yunohost.org/appci/app/chatonsinfos) ![Working status](https://ci-apps.yunohost.org/ci/badges/chatonsinfos.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/chatonsinfos.maintain.svg)
+[![Integration level](https://apps.yunohost.org/badge/integration/chatonsinfos)](https://ci-apps.yunohost.org/ci/apps/chatonsinfos/)
+![Working status](https://apps.yunohost.org/badge/state/chatonsinfos)
+![Maintenance status](https://apps.yunohost.org/badge/maintained/chatonsinfos)
 
 [![Install Chatons Infos with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=chatonsinfos)
 
@@ -22,11 +24,6 @@ ChatonsInfos is a protocol for sharing data about the CHATONS collective, its me
 **Shipped version:** 2023.12.21~ynh1
 
 **Demo:** <https://stats.chatons.org/index.xhtml>
-
-## Screenshots
-
-![Screenshot of Chatons Infos](./doc/screenshots/example.jpg)
-
 ## Documentation and resources
 
 - Official admin documentation: <https://framagit.org/chatons/chatonsinfos/-/blob/master/README.md>
