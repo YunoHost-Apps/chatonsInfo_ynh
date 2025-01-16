@@ -1,3 +1,5 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/master/schemas/manifest.v2.schema.json
+
 packaging_format = 2
 
 id = "chatonsinfos"
@@ -35,20 +37,20 @@ ram.runtime = "50M"
     [install.path]
     type = "path"
     default = "/.well_known/chatonsinfos/"
-    
+
 [resources]
     # See the packaging documentation for the full set
     # of explanation regarding the behavior and properties for each of those
 
     [resources.sources]
-    
+
     [resources.sources.main]
     url = "https://framagit.org/chatons/chatonsinfos/-/archive/f55b95d91253150c8456d3b1330760fbc92b7e5c/chatonsinfos-f55b95d91253150c8456d3b1330760fbc92b7e5c.tar.bz2"
     sha256 = "80ed840c350d387ac419de66715158e5f01d9334f65fcdf5d632f5ab429dfb9e"
     format = "tar.gz"
     in_subdir = true
     autoupdate.strategy = "latest_gitlab_commit"
-    
+
     [resources.system_user]
     # This will provision/deprovision a unix system user
 

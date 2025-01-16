@@ -6,7 +6,7 @@ app=$1
 
 [ "${app}" == "chatonsinfos" ] && exit 0
 
-install_dir=/var/www/chatonsinfos/
+install_dir=/var/www/chatonsinfos
 service_path=${install_dir}public/${app}.properties
 groups_added=$4
 app_info="$(yunohost app info $app --full --json)"

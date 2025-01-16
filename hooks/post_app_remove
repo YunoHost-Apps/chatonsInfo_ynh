@@ -5,7 +5,7 @@ source /usr/share/yunohost/helpers
 
 [ "${YNH_APP_INSTANCE_NAME}" == "chatonsinfos" ] && exit 0
 
-install_dir=/var/www/chatonsinfos/
+install_dir=/var/www/chatonsinfos
 ynh_secure_remove --file="$install_dir/public/${YNH_APP_INSTANCE_NAME}.properties"
 
 sed -i "/^subs\.${YNH_APP_INSTANCE_NAME} =/d" "$install_dir/public/organization.properties"
