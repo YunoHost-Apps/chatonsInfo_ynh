@@ -21,7 +21,7 @@ Il NE doit PAS être modifié à la main.
 ChatonsInfos est un protocole de partage de données sur le collectif CHATONS, ses membres et leurs services.
 
 
-**Version incluse :** 2023.12.21~ynh1
+**Version incluse :** 2023.12.21~ynh2
 
 **Démo :** <https://stats.chatons.org/index.xhtml>
 ## Documentations et ressources

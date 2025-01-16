@@ -21,7 +21,7 @@ Nie powinno być ono edytowane ręcznie.
 ChatonsInfos is a protocol for sharing data about the CHATONS collective, its members and their services.
 
 
-**Dostarczona wersja:** 2023.12.21~ynh1
+**Dostarczona wersja:** 2023.12.21~ynh2
 
 **Demo:** <https://stats.chatons.org/index.xhtml>
 ## Dokumentacja i zasoby
