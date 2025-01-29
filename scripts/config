@@ -1,23 +1,18 @@
 #!/bin/bash
-# In simple cases, you don't need a config script. 
+# In simple cases, you don't need a config script.
 
-# With a simple config_panel.toml, you can write in the app settings, in the 
+# With a simple config_panel.toml, you can write in the app settings, in the
+
 # upstream config file or replace complete files (logo ...) and restart services.
 
-# The config scripts allows you to go further, to handle specific cases 
+# The config scripts allows you to go further, to handle specific cases
+
 # (validation of several interdependent fields, specific getter/setter for a value,
 # display dynamic informations or choices, pre-loading of config type .cube... ).
 
-#=================================================
-# GENERIC STARTING
-#=================================================
-# IMPORT GENERIC HELPERS
-#=================================================
-
 source /usr/share/yunohost/helpers
 
-ynh_abort_if_errors
-
+#REMOVEME? ynh_abort_if_errors
 
 #=================================================
 # SPECIFIC GETTERS FOR TOML SHORT KEY
@@ -33,7 +28,7 @@ get__host_properties() {
 # SPECIFIC SETTERS FOR TOML SHORT KEYS
 #=================================================
 get__multi_file() {
-    ynh_app_setting_get --app=$app --key=$1
+    ynh_app_setting_get --key=$1
 }
 set__multi_file() {
     local short_setting="${1//_/.}"
@@ -41,26 +36,26 @@ set__multi_file() {
     local bind_files="$(echo $3 | sed 's/multi_file(//' | sed 's/)//')"
     local value="${!1}"
     local bind_file
-    ynh_app_setting_set --app=$app --key=$1 --value="$value"
-    ynh_print_info --message="Configuration key '$short_setting' edited in app settings"
+    ynh_app_setting_set --key=$1 --value="$value"
+    ynh_print_info "Configuration key '$short_setting' edited in app settings"
     if [ "$bind_files" != "" ]
     then
         for bind_file in ${bind_files//,/ }
         do
             ynh_read_var_in_file --file="${bind_file}" --key="${short_settings}"
-            ynh_print_info --message="Configuration key '$short_setting' edited in '${bind_file}'"
+            ynh_print_info "Configuration key '$short_setting' edited in '${bind_file}'"
         done
     fi
 }
 
 get__manage_subs() {
-    ynh_app_setting_get --app=$app --key=$1
+    ynh_app_setting_get --key=$1
 }
 set__manage_subs() {
-    ynh_print_info --message="Configuration key '$1' edited in app settings"
-    ynh_app_setting_set --app=$app --key=$1 --value="${!1}"
-    
-    ynh_print_info --message="Subs added in organization.properties"
+    ynh_print_info "Configuration key '$1' edited in app settings"
+    ynh_app_setting_set --key=$1 --value="${!1}"
+
+    ynh_print_info "Subs added in organization.properties"
     update_subs
 }
 
@@ -81,7 +76,5 @@ ynh_app_config_apply() {
     done
 
 }
-#=================================================
-# GENERIC FINALIZATION
 #=================================================
 ynh_app_config_run $1
