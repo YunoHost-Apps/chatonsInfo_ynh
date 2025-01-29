@@ -10,36 +10,25 @@ source /usr/share/yunohost/helpers
 ynh_app_setting_set --key=host_server_distribution --value="YunoHost"
 
 #=================================================
-# APP "BUILD" (DEPLOYING SOURCES, VENV, COMPILING ETC)
-#=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 ynh_script_progression "Setting up source files..."
 
-# Download, check integrity, uncompress and patch the source from app.src
 ynh_setup_source --dest_dir="$install_dir/sources"
+
 mkdir $install_dir/public
 
 # Empty html page to fix the CI
 echo "<html><body>ChatonsInfos</body></html>" > $install_dir/public/index.html
 # $install_dir will automatically be initialized with some decent
 
-# permission by default ... however, you may need to recursively reapply
-# ownership to all files such as after the ynh_setup_source step
-#REMOVEME? Assuming the install dir is setup using ynh_setup_source, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chown -R root:root "$install_dir"
-#REMOVEME? Assuming the install dir is setup using ynh_setup_source, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chown $app:www-data "$install_dir"
-chown -R $app:www-data "$install_dir/public"
-#REMOVEME? Assuming the install dir is setup using ynh_setup_source, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chmod -R o-rwx "$install_dir"
 #=================================================
 # SYSTEM CONFIGURATION
 #=================================================
 ynh_script_progression "Adding system configurations related to $app..."
 
-# Create a dedicated NGINX config using the conf/nginx.conf template
 ynh_config_add_nginx
 
-#=================================================
-# APP INITIAL CONFIGURATION
 #=================================================
 # ADD A CONFIGURATION
 #=================================================
@@ -65,10 +54,7 @@ generate_config_panel
 #=================================================
 ynh_script_progression "Adding cron job to generate metrics..."
 
-cron_path="/etc/cron.daily/$app"
-ynh_config_add --template="cron" --destination="$cron_path"
-#REMOVEME? Assuming the file is setup using ynh_config_add, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chown root: "$cron_path"
-#REMOVEME? Assuming the file is setup using ynh_config_add, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chmod 644 "$cron_path"
+ynh_config_add --template="cron" --destination="/etc/cron.daily/$app"
 
 #=================================================
 # END OF SCRIPT
